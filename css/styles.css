@@ -1,0 +1,188 @@
+body {
+    
+    background-color: lightblue;
+    height: 80vh;
+ 
+}
+
+
+.video video{
+
+    margin-top: 50px;
+    margin-left: 40%;
+    width: 400px;
+}
+.title{
+    text-align: center;
+}
+.title span{
+    color: orangered;
+    font-size: 100px;
+    transition: 0.5s;
+    font-weight: 100;
+    will-change: transform;
+    display: inline-block;
+}
+
+.s1 span{
+    transform-origin: bottom;
+}
+
+.s2 span{
+    transform-origin: top;
+    transform: translateY(100%)
+    rotateX(-90deg) ;
+}
+
+.s2{
+   
+    top: 0;
+    left: 0;
+}
+.title:hover .s1 span{
+    transform: translateY(-100%)
+    rotateX(-90);
+}
+
+.title:hover .s2 span{
+    transform: translateY(0%)
+    rotateX(0);
+}
+
+
+
+
+
+p{
+    font-family: "Londrina Sketch", sans-serif;
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* menu */
+
+.header{
+    background-color: gray;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: xx-large;
+    
+}  
+
+
+
+ /* tableau tarifs */
+.tableau-style{
+
+   border-collapse: collapse;
+   min-width: 400px;
+   width: auto;
+   box-shadow: 0 5px 50px rgba(0,0, 0, 0.15);
+   cursor:pointer;
+   margin: 100x auto;
+   border: 2px solid black;
+   margin-left: 30%;
+   margin-top: 10%;
+}
+
+thead tr {
+    background-color: gray;
+    color: #fff;
+    text-align: left;
+}
+
+th ,td {
+    padding: 15px 20px ;
+    text-align: center;
+}
+
+tbody tr ,td,th {
+    border: 1px solid black;
+}
+tbody tr:last-of-type{
+    border-bottom: 2px;
+}
+
+
+.tarifs h1{
+    font-size: 80px;
+    font-family: "Qwitcher Grypen", cursive;
+
+}
+
+/*  formulaire de contact */
+
+
+
+form{
+    max-width: 900px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+    form{
+        margin: 100px 15px;
+    }
+    
+}
+
+.input-container:not(:nth-child(1)){
+    margin-top: 20px;
+}
+
+.input-container label{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.img{
+    width: 50px;
+}
+
+.input-container img{
+    background-color: #2196f3;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-group{
+    display: flex;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 18px;
+    flex-basis: 100%;
+    border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border: 2px solid #333;
+    outline: none;
+}
+
+form button{
+    padding: 10px 35xp;
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: limegreen;
+    border-radius: 3px;
+    border: none;
+}
+
